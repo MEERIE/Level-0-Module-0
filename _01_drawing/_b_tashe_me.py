@@ -15,7 +15,7 @@ def set_background(filename):
     window.bgpic(filename)
 
 
-def add_moustache(filename):
+def add_moustache(filename: object) -> object:
     m = turtle.Turtle()
 
     m.hideturtle()
