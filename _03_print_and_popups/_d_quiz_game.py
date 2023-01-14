@@ -1,17 +1,15 @@
 from tkinter import messagebox, simpledialog, Tk
 
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
+if __name__ == '__main__':
+    window = Tk()
     
-    # Make a new window variable, window = Tk()
-    
-    # Hide the window using the window's .withdraw() method
-    
-    # 1. Create a variable to hold the user's score. Set it equal to zero. 
+    window.withdraw()
 
     # ASK A QUESTION AND CHECK THE ANSWER
-
-    #      // 2.  Ask the user a question 
-    
+    simpledialog.askstring(title=None, prompt=)
+    #      // 2.  Ask the user a question
+    if variable == "":
     #      // 3.  Use an if statement to check if their answer is correct
 
     #      // 4.  if the user's answer was correct, add one to their score 
