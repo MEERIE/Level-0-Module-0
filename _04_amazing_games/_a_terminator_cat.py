@@ -60,17 +60,17 @@ if __name__ == '__main__':
     #    e. Drag and drop the image into this python package
     
     # 2. Call the set_background() function with your variable inside of the parenthesis
-    #    for example, set_background(bg_image)
-
+    set_background("bigEyedCat.gif")
     # 3. Make a new turtle
-
+    chad: turtle.Turtle = turtle.Turtle()
     # 4. Set the turtle color and pen color to red (or any color you want)
     #    using .color('red', 'red')
-
+    chad.color('green')
+    chad.pencolor('blue')
     # 5. Set the turtle width to 0 so no outlines are drawn
-
+    chad.width(0)
     # 6. Set the turtle speed to 0 (fastest)
-
+    chad.speed(0)
     # 7. Run the program and click on one of the cat's eyes. 
     #    The x,y position of the eye will be printed at the bottom of your
     #    processing window.
@@ -80,11 +80,12 @@ if __name__ == '__main__':
     
     # 8. After you've found the x and y for the eyes create 2 eye variables
     #    and initialize them:
-    #    left_eye  = Eye(eye=my_turtle, x=-34, y=11, radius=30)
-    #    right_eye = Eye(eye=my_turtle, x=40, y=-5, radius=30)
+    left_eye = Eye(eye=chad, x=-31, y=25, radius=50)
+    right_eye = Eye(eye=chad, x=41, y=10, radius=50)
 
     # 9. Call the .draw() method on BOTH eye variables
-
+    left_eye.draw()
+    right_eye.draw()
 
 # ===================== DO NOT EDIT THE CODE BELOW ============================
     window.onclick(screen_clicked)
